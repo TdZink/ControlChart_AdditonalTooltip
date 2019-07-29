@@ -1,0 +1,56 @@
+svg {
+   // background: pink;
+    opacity: 100;
+    z-index: -1;
+    padding: "10px";
+}
+
+.xAxis path, line {
+    stroke-width: 0px;
+    
+}
+
+//.measureLineContainer{
+//    stroke: indigo;
+//}
+
+.yAxisStdDev path, .yAxis path {
+    stroke-width: 0px;
+}
+    //TODO: add access for user to turn off gridlines - in the visual.ts file
+    //y axis guidelines 
+.yAxis line {
+    stroke-width: 1px;
+    color: #ebebeb;
+}
+
+.yAxisStdDev text, .xAxis text, .yAxis text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #808080;
+}
+
+.yAxisStdDev text, .yAxis text{
+    font-size: 12px;
+}
+
+.xAxis text{
+    font-size: 12px;
+}
+
+.median, .LC {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 1.5 px;
+    stroke-dasharray: 2%;
+}
+
+circle{
+ stroke-width: 20;
+ 
+}
+
+
+//.area {
+    //fill: #eaeaea; //will be moved to visual.ts so it can be controlled by the capabilities option
+//    opacity: 0.25;   //Figure out how to get a slider so it can be controlled by the capabilities option
+//}

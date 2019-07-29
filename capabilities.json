@@ -1,0 +1,349 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Date Grouping",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Tooltips",
+            "name": "additionalToolTip",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "ControlLimitOptions": {
+            "displayName": "Conrol Limit Options",
+            "properties": {
+                "UCShow":{
+                    "displayName": "Show Upper Control Limit",
+                    "description": "Turn on or off the Upper Control Limit line",
+                    "type": {"bool": true}
+                },
+                "numOfDeviationsUC_x":{
+                    "displayName": "UC # of Std Deviations",
+                    "description": "Supply # of Standard Deviations for the control line",
+                    "type": {
+                        "enumeration": [{
+                                "value": "1",
+                                "displayName": "1"
+                            },
+                            {
+                                "value": "2",
+                                "displayName": "2"
+                            },
+                            {
+                                "value": "3",
+                                "displayName": "3"
+                            }]
+                        }
+                },
+                "UCLabelShow":{
+                    "displayName": "Show Upper Control Label",
+                    "description": "Turn on or off the Upper Control Label",
+                    "type": {"bool": true}
+                },
+                "UCLineStyle":{
+                  "displayName": "Upper Control Style" ,
+                  "description": "Choose the style of line" ,
+                  "type": {
+                            "enumeration": [{
+                                    "value": "dash",
+                                    "displayName": "Dash"
+                                },
+                                {
+                                    "value": "solid",
+                                    "displayName": "Solid"
+                            }]
+                  }
+                },
+                "LCShow":{
+                    "displayName": "Show Lower Control Limit",
+                    "description": "Turn on or off the Lower Control Limit line",
+                    "type": {"bool": true}
+                },
+                "numOfDeviationsLC":{
+                    "displayName": "LC # of Std Deviations",
+                    "description": "Supply # of Standard Deviations for the conrol line",
+                    "type": {
+                        "enumeration": [{
+                                "value": "1",
+                                "displayName": "1"
+                            },
+                            {
+                                "value": "2",
+                                "displayName": "2"
+                            },
+                            {
+                                "value": "3",
+                                "displayName": "3"
+                            }]
+                        }
+                },
+                "LCLabelShow":{
+                    "displayName": "Show Upper Control Label",
+                    "description": "Turn on or off the Upper Control Label",
+                    "type": {"bool": true}
+                },
+                "LCLineStyle":{
+                    "displayName": "Lower Control Style" ,
+                    "description": "Choose the style of line" ,
+                    "type": {
+                              "enumeration": [{
+                                      "value": "dash",
+                                      "displayName": "Dash"
+                                  },
+                                  {
+                                      "value": "solid",
+                                      "displayName": "Solid"
+                              }]
+                    }
+                  },
+                  "AreaShadingShow":{
+                      "displayName": "Control Area Shading",
+                      "description": "Turn on or off shading between the upper and lower control limits",
+                      "type": {"bool": true}
+                  },
+                  "AreaShadingFill": {
+                      "displayName": "Control Area Fill",
+                      "description": "Choose the color the control area",
+                      "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                  },
+                  "transparency":{
+                      "displayName": "Control Area Transparency",
+                      "type": {"integer": true}
+                  }             
+                
+            }
+        },
+        "MedianControlOptions":{
+            "displayName": "Median Controls",
+            "properties": {
+                "medianShow":{
+                    "displayName": "Show Median Line",
+                    "description": "Turn on or off the median line",
+                    "type": {"bool": true}
+                },
+                "MedianLineStyle":{
+                    "displayName": "Meidan Style" ,
+                    "description": "Choose the style of line" ,
+                    "type": {
+                              "enumeration": [{
+                                      "value": "dash",
+                                      "displayName": "Dash"
+                                  },
+                                  {
+                                      "value": "solid",
+                                      "displayName": "Solid"
+                              }]
+                    }
+                  },
+                  "MedianLabelShow":{
+                      "displayName": "Show Median Label",
+                      "description": "Turn on or off the data lable on the median line",
+                      "type": {"bool": true}
+                  }  
+            }
+        },
+        "TrendLineControls":{
+            "displayName": "Trend Line Controls",
+            "properties": {
+                    "trendShow":{
+                        "displayName": "Show Trend Line",
+                        "description": "Turn on or off the trend line",
+                        "type":{
+                            "bool": true
+                        }
+                    },
+                    "trendStyle":{
+                        "displayName": "Trend Line Style",
+                        "description": "Choose the style of line",
+                        "type":{
+                            "enumeration": [{
+                                "value": "dash",
+                                "displayName": "Dash"
+                            },
+                            {
+                                "value": "solid",
+                                "displayName": "Solid"
+                        }]
+                        }
+                    }
+                }
+            
+        },
+        "DataColors":{
+            "displayName": "Data Colors",
+            "properties": {
+                "measureFill":{
+                    "displayName": "Measure Fill",
+                    "description": "Choose the color of the Measure line",
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                },
+                "medianFill":{
+                    "displayName": "Median Fill",
+                    "description": "Choose the color of the Median line",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "UCFill":{
+                    "displayName": "Upper Control Fill",
+                    "description": "Choose the color of the Upper Control Limit line",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "LCFill":{
+                    "displayName": "Lower Control Fill",
+                    "description": "Choose the color of the Lower Control Limit line",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "trendColor": {
+                    "displayName": "Trend Fill",
+                    "description": "Choose the color of the Trend line",
+                    "type": {
+                        "fill": {
+                            "solid": {"color": true}
+                        }
+                    }
+                }
+            }
+        },
+        "DataLables":{
+            "displayName": "Data Labels",
+            "properties": {
+                "dataLabelShow":{
+                    "displayName": "Show Data Labels",
+                    "description": "Turn on or off data labels",
+                    "type":{"bool": true}
+                },
+                "dataLabelFill":{
+                    "displayName": "Data Label Color",
+                    "description": "Color of data label",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "dataLabelBackgroundShow":{
+                    "displayName": "Data Label Background",
+                    "description": "Turn on or off data label background",
+                    "type": {"bool": true}
+                },
+                "dataLabelBackgroundFill":{
+                    "displayName": "Background Color",
+                    "description": "Background color of data label",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+
+        },
+        "XAxis":{
+            "displayName": "X Axis",
+            "properties": {
+                "xAxisShow":{
+                    "displayName": "Show X Axis",
+                    "description": "Turn on or off the X Axis",
+                    "type": {"bool": true}
+                },
+                "xAxisFill":{
+                    "displayName": "X Axis Color",
+                    "description": "Choose the color of the X Axis label",
+                        "type": {
+                            "fill": { "solid": { "color": true }  }
+                        }
+                }
+            }
+        },
+        "YAxis":{
+            "displayName": "Y Axis",
+            "properties": {
+                "yAxisShow":{
+                    "displayName": "Show Y Axis",
+                    "description": "Turn on or off the Y Axis",
+                    "type": {"bool": true}
+                },
+                "yAxisGridLineShow": {
+                    "displayName": "Show Grid Lines",
+                    "description": "Turn on or off grid lines",
+                    "type": {"bool": true}
+                },
+                "SDAxisShow":{
+                    "displayName": "Show Standard Deviation Axis",
+                    "description": "Turn on or off the Standard Deviation Axis",
+                    "type": {"bool": true}
+                },
+                "yAxisFill":{
+                    "displayName": "Y Axis Color",
+                    "description": "Choose the color of the Y Axis label",
+                        "type": {
+                            "fill": { "solid": { "color": true }  }
+                        }
+                }
+            }
+        }
+       
+    },
+    "dataViewMappings": [
+        {
+                "conditions":[
+                    { "category": {"max": 1},
+                      "measure": {"max": 1},
+                      "additionalToolTip": {"max": 3}                    
+                    }
+
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    }
+                },
+                "values": {
+                    "select": [
+                        { "bind": { "to": "measure" } },
+                        { "bind": { "to": "additionalToolTip" } }
+                        
+                    ]
+                }
+            }
+        }
+    ]
+}
